@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product Page</title>
+    <script src="script01.js">
+    </script>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #569cc0;
+}
+
+/* Add this to your existing styles.css file or create a new one */
+
+/* Style the navigation bar */
+nav {
+    background-color: #d53b3b;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 2px;
+}
+
+/* Style the header */
+header {
+    background-color: #90c12f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+        border-bottom: 1px solid #ddd;
+        position: relative; /* Add this for positioning */
+        /* Add these properties for better spacing and alignment */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .favorite-deals-link {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 16px;
+        position: absolute;
+        top: 10px; /* Adjust the top and right values to position the link */
+        right: 20px;
+    }
+    .favorite-deals-link:hover {
+        color: #33ff00;
+    }
+    
+
+
+/* Style the main content area */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #434be3;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the product cards */
+.product {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.product h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+.add-to-cart {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background-color: #555;
+}
+
+/* Style the shopping cart */
+.cart {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.cart h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Style the view cart button */
+#view-cart {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin-top: 20px;
+}
+
+#view-cart:hover {
+    background-color: #ff3300;
+}
+
+    </style>
+    <body>
+        
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+          <a href="favorite-deals.html" class="favorite-deals-link">Favorite Deals
+            
+          </a> 
+    </ul>
+    </nav>
+
+    <header>
+        <img src="https://i0.wp.com/bloomingtrenz.com/wp-content/uploads/2018/03/Deal-Post-Banner.jpg?fit=1540%2C768" alt="Header Image">
+        <h1>My E-Commerce Store</h1>
+      <!-- Add your favorite deals link with a class -->
+        
+    </header>
+    <main>
+        <div class="product">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.YOXd8-O09C0CHlG8osE40AHaGs&pid=Api&P=0&h=220" alt="Product 1">
+            <h2>t-shirts</h2>
+            <p>Description:colorful t-shirts for boys.stechibal and comfortable</p>
+            <p>Price: 399rs</p>
+            <button class="add-to-cart" data-name="Product 1" data-price="99.99">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.-MsZsior4yAX9DLXBGfHowHaFj&pid=Api&P=0&h=220" alt="Product 2">
+            <h2>sport shoes</h2>
+            <p>Description:premium quality,fit aslo comfortable, for walking,runnig and other sports</p>
+            <p>Price: 456rs</p>
+            <button class="add-to-cart" data-name="Product 2" data-price="49.99">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.6zHNDhzHJtnYuKvs1yBARwHaJk&pid=Api&P=0&h=220" alt="Product 1">
+            <h2>football kit</h2>
+            <p>Description:best football kit under 570rs,unique color </p>
+            <p>Price: 570rs</p>
+            <button class="add-to-cart" data-name="Product 3" data-price="570rs">Add to Cart</button>
+        <!-- Add more products here using the same structure -->
+        </div>
+        <div class="product">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.XincheCxdxdwSJr5Bh4idgHaHa&pid=Api&P=0&h=220" alt="Product 2">
+            <h2>smart watch</h2>
+            <p>Description: water proof ,120 features DZ09 Bluetooth Smart Wrist Watch With Health Monitoring Calls Texts For Android and iPhone - SILVER </p>
+            <p>Price: 1400rs</p>
+            <button class="add-to-cart" data-name="Product 4" data-price="1400rs">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.-go2UwDaSnvbe0qf-nKDuQHaHa&pid=Api&P=0&h=220" alt="Product 2">
+            <h2>sky bag</h2>
+            <p>Description:water proof bag as well as 5 setion inside, UA HUSTLE SPORT BACKPACK
+                These bags are tough, light, and water rolls right off them—and those bungee sleeves make it easy to stow things like a warm-up jacket quickly.
+                
+                Water-resistant UA Storm technology keeps your stuff dry
+                2 side water bottle pockets
+                Volume: 26L
+                Padded back panel & shaped straps make it more comfortable to carry
+                Soft-lined laptop sleeve with organization panel—holds up to 15" MacBook Pro or similarly sized laptop</p>
+            <p>Price: 150rs</p>
+            <button class="add-to-cart" data-name="Product 5" data-price="150rs">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.gSClzLEqubCYtD4sYPALRQHaHa&pid=Api&P=0&h=220" alt="Product 2">
+            <h2>realme 10s</h2>
+            <p>Description: NETWORK	Technology	
+                GSM / HSPA / LTE
+                LAUNCH	Announced	2020, June 30
+                Status	Available. Released 2020, July 07
+                BODY	Dimensions	164.4 x 75.9 x 9.1 mm (6.47 x 2.99 x 0.36 in)
+                Weight	196 g (6.91 oz)
+                SIM	Dual SIM (Nano-SIM, dual stand-by)
+                DISPLAY	Type	IPS LCD
+                Size	6.5 inches, 103.7 cm2 (~83.1% screen-to-body ratio)
+                Resolution	720 x 1560 pixels, 19.5:9 ratio (~264 ppi density)
+                PLATFORM	OS	Android 10, Realme UI
+                Chipset	Mediatek MT6765G Helio G35 (12 nm)
+                CPU	Octa-core (4x2.3 GHz Cortex-A53 & 4x1.8 GHz Cortex-A53)
+                GPU	PowerVR GE8320
+                MEMORY	Card slot	microSDXC (dedicated slot)
+                Internal	32GB 2GB RAM, 32GB 3GB RAM
+                     eMMC 5.1
+                MAIN CAMERA	Dual	13 MP, f/2.2, (wide), PDAF
+                2 MP, f/2.4, (depth)
+                FEATURES	Sensors	Accelerometer, proximity, compass
+                BATTERY	Type	Li-Po 5000 mAh, non-removable
+                Charging	10W wired</p>
+            <p>Price: 8500rs</p>
+            <button class="add-to-cart" data-name="Product 6" data-price="850rs">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.ILqUa9o7iu1jFPlHRTWbKQHaEK&pid=Api&P=0&h=220" alt="Product 2">
+            <h2>lenovo idea pad 3</h2>
+            <p>Description:Lenovo Ideapad 3i Business Laptop, 14 Inch FHD Display, Intel Core i3-1115G4 Processor, 20GB RAM, 1TB SSD, Intel UHD Graphics, Wi-Fi 6, Bluetooth 5.0, Media Card Reader, Windows 11 Home in S Mode
+            </p>
+            <p>Price: 25000rs</p>
+            <button class="add-to-cart" data-name="Product 7" data-price="25000rs">Add to Cart</button>
+        </div>
+    </main>
+    <!-- Rest of your HTML code -->
+</body>
+</html>
+
+    </body>
